@@ -1,2 +1,2 @@
 # Technologie-Internetowe
-Semestr V, Prowadzący: Tomasz Staś
+Semestr: V, Prowadzący: Tomasz Staś
