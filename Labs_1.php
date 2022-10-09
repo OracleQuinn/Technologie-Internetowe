@@ -205,4 +205,8 @@
         
 ?>
 
+<?php
+    $zmienna = '<br/>' . '<h2>To jest zmienna z Labs_1.php</h2>' . '<br/>';
+?>
+
 <hr/>
