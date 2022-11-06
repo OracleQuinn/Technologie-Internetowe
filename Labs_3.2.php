@@ -1,12 +1,12 @@
 <?php
     echo '<h1><font color=RoyalBlue>16.10.2022</font></h1>';
+    echo '<h1><font color=RoyalBlue>06.11.2022</font></h1>';
 ?>
 
 <?php 
+    require('config.php');
 
-    echo '<h3><font color=LightCoral>Utworzyć klasę pracownik, potomną do klasy człowiek. Dodatkowe pola liczba godzin, metoda zwiększ etat.</font></h3>';
-
-    $polaczennie = new mysqli('localhost', 'root', '', 'studenci');
+    $polaczennie = new mysqli($server, $db_user, $db_password, $db_name);
 
     if (mysqli_connect_error() != 0) {
         echo 'ERROR: ' . mysqli_connect_errno();
@@ -46,7 +46,9 @@
     echo '<th>Imie</th><th>Nazwisko</th><th>Data urodzenia</th><th>Pesel</th><th>Płeć</th>';
     while (($rekord=$wynik->fetch_assoc()) != null){
         echo '<tr>';
-        echo '<td>' . $rekord['imie'] . '</td><td>' . $rekord['nazwisko'] . '</td><td>' . $rekord['data_ur'] . '</td><td>' . $rekord['pesel'] . '</td><td>' . $rekord['plec'] . '</td>';
+        echo '<td>' . $rekord['imie'] . '</td><td>' . $rekord['nazwisko'] . '</td><td>' . $rekord['data_ur'] . '</td><td>' . $rekord['pesel'] . '</td><td>' . $rekord['plec'] . '</td>' . 
+        "<td><a href='delete.php?id_s=$rekord[id_studenta]'>Usuń</a></td>" . 
+        "<td><a href='edit.php?id_s=$rekord[id_studenta]'>Edytuj</a></td>";
         echo '</tr>';
     }
     echo '</table>';
