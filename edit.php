@@ -12,7 +12,7 @@
     echo "<form method=POST action=update.php?id_s=$_GET[id_s]>";
     echo "IMIĘ: <input type=text name='frm_imie' value=" . $rekord['imie'] . "><br/>";
     echo "NAZWISKO: <input type=text name='frm_nazwisko' value=" . $rekord['nazwisko'] . "><br/>";
-    echo "DATA URODZENIA: <input type=text name='frm_data_ur' value=" . $rekord['data_ur'] . "><br/>";
+    echo "DATA URODZENIA: <input type=date name='frm_data_ur' value=" . $rekord['data_ur'] . "><br/>";
     echo "<input type=submit>";
     echo "</form>";
 ?>
