@@ -54,4 +54,6 @@
     echo '</table>';
 
     echo 'Liczba rekordów: ' . $wynik->num_rows;
+
+    echo "<br/><a href='add.html'>Dodaj</a>";
 ?>

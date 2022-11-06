@@ -17,4 +17,6 @@
     //'ss' oznacza, że pierwszy parametr i drugi są stringami, każda kolejna litera określa typ kolejnej zmiennej
 
     $pre->execute();
+
+    phpinfo();
 ?>
