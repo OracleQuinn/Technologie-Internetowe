@@ -1,5 +1,6 @@
 <?php
-    $link = 'http://api.sunrise-sunset.org/json?lat=50.258380&lng=19.044658&date=today';
+    // $link = 'http://api.sunrise-sunset.org/json?lat=50.258380&lng=19.044658&date=today';
+    $link =  'http://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita';
     $plik = fopen($link, 'r');
     $json = fread($plik, 1024);
 
