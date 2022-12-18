@@ -48,7 +48,8 @@
         echo '<tr>';
         echo '<td>' . $rekord['imie'] . '</td><td>' . $rekord['nazwisko'] . '</td><td>' . $rekord['data_ur'] . '</td><td>' . $rekord['pesel'] . '</td><td>' . $rekord['plec'] . '</td>' . 
         "<td><a href='delete.php?id_s=$rekord[id_studenta]'>Usuń</a></td>" . 
-        "<td><a href='edit.php?id_s=$rekord[id_studenta]'>Edytuj</a></td>";
+        "<td><a href='edit.php?id_s=$rekord[id_studenta]'>Edytuj</a></td>".
+        "<td><a href='wydruki_rtf.php?id_s=$rekord[id_studenta]'>Pobierz bilet</a></td>";
         echo '</tr>';
     }
     echo '</table>';
